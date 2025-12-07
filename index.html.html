@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal blog and articles - terminal style">
+    <title>YOUR NAME - Personal Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .terminal-header {
+            border: 2px solid #00ff00;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #000;
+        }
+
+        .scan-line {
+            color: #00ff00;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+
+        h1 {
+            color: #00ff00;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        h2 {
+            color: #00ff00;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 5px;
+        }
+
+        .tagline {
+            color: #00aa00;
+            font-size: 1.1em;
+        }
+
+        .nav {
+            margin: 20px 0;
+            padding: 15px;
+            background: #000;
+            border: 1px solid #00ff00;
+        }
+
+        .nav a {
+            color: #00ff00;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+        .article {
+            background: #0d0d0d;
+            border-left: 3px solid #00ff00;
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: all 0.3s;
+        }
+
+        .article:hover {
+            background: #111;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+        }
+
+        .article-title {
+            color: #00ff00;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .article-date {
+            color: #00aa00;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .article-content {
+            color: #00dd00;
+            line-height: 1.8;
+        }
+
+        .status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #000;
+            border-top: 2px solid #00ff00;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            color: #00aa00;
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+        .prompt {
+            color: #00ff00;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #00ff00;
+            text-align: center;
+            color: #00aa00;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="terminal-header">
+            <div class="scan-line">>>> INITIALIZING SYSTEM...</div>
+            <h1>Blixtdrake</h1>
+            <p class="tagline">Personal Blog | Essays | Digital Journal</p>
+        </div>
+
+        <div class="nav">
+            <span class="prompt">$</span> 
+            <a href="#home">HOME</a>
+            <a href="#articles">ARTICLES</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+        <section id="home">
+            <h2>>>> WELCOME_MESSAGE</h2>
+            <div class="article">
+                <p class="article-content">
+                    Website under testing. Once done, a better version will be rolled out. look forward to it!
+                </p>
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2>>>> RECENT_ARTICLES</h2>
+            
+            <!-- ARTICLE 1 - COPY THIS ENTIRE BLOCK TO ADD MORE ARTICLES -->
+            <div class="article">
+                <div class="article-title">Dusk office begins here</div>
+                <div class="article-date">DATE: 2025-12-07 | STATUS: PUBLISHED</div>
+                <p class="article-content">
+                    Dusk office has begun. The journey does not have defined aim or goals. Much so the exploration 
+                    the new possibilities. Perhaps it will come to a stop before any major milestones are achieved. 
+                    Even still, this will be the record of what happened during this period. 
+                    <br><br>
+                    You can add multiple paragraphs by using &lt;br&gt;&lt;br&gt; like I did here.
+                    Keep writing until you've said everything you want to say!
+                </p>
+            </div>
+
+            <!-- ARTICLE 2 -->
+            <div class="article">
+                <div class="article-title">Your Second Article Title</div>
+                <div class="article-date">DATE: 2024-12-05 | STATUS: PUBLISHED</div>
+                <p class="article-content">
+                    Here's another article. To add a new article, just copy the entire "article" div block
+                    (from &lt;div class="article"&gt; to &lt;/div&gt;) and paste it above or below.
+                    Then change the title, date, and content to whatever you want!
+                </p>
+            </div>
+
+            <!-- ARTICLE 3 -->
+            <div class="article">
+                <div class="article-title">How to Customize This Website</div>
+                <div class="article-date">DATE: 2024-12-01 | STATUS: PUBLISHED</div>
+                <p class="article-content">
+                    To customize this site: 
+                    <br><br>1. Change "Blixtdrake" at the top to your actual name
+                    <br>2. Replace article titles and content with your own
+                    <br>3. Update dates to match when you publish
+                    <br>4. Copy article blocks to add more posts
+                    <br>5. Modify the "About" and "Contact" sections below
+                    <br><br>
+                    That's it! You don't need to understand all the code - just change the text between the tags.
+                </p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>>>> ABOUT_ME</h2>
+            <div class="article">
+                <p class="article-content">
+                    Replace this section with information about yourself. Who are you? What do you do?
+                    What are your interests? Why did you start this blog? Make it personal and authentic.
+                    <br><br>
+                    This is your space to share your story!
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>>>> CONTACT_INFO</h2>
+            <div class="article">
+                <p class="article-content">
+                    Email: onkargite04@gmail.com<br>
+                    GitHub: github.com/DuskOffice
+                    <br><br>
+                    Replace these with your actual contact information, or remove the ones you don't want to share.
+                </p>
+            </div>
+        </section>
+
+        <div class="footer">
+            <p>© 2025 Blixtdrake | Powered by GitHub Pages</p>
+            <p>Design inspired by terminal aesthetics</p>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <span class="scan-line">●</span> SYSTEM ONLINE | MONITORING: ACTIVE | LAST UPDATE: <span id="current-date"></span>
+    </div>
+
+    <script>
+        // This shows today's date in the status bar
+        document.getElementById('current-date').textContent = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>
